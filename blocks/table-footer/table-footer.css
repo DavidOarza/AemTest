@@ -1,0 +1,88 @@
+body {
+    line-height: normal;
+}
+
+.table-footer { 
+    width: 96vw;
+    padding-bottom: 5%;
+    margin-left: calc(-50vw + 55%);
+    overflow-x: auto;
+}
+
+.table-footer table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: separate;
+    font-size: var(--body-font-size-xs);
+    border-spacing: 10px;
+}
+
+@media (width >=600px) {
+    .table-footer table {
+        font-size: var(--body-font-size-s);
+    }
+}
+
+@media (width >=900px) {
+    .table-footer table {
+        font-size: var(--body-font-size-m);
+    }
+}
+
+.table-footer table tr {
+    height: 24px;
+    margin-bottom: 6px;
+    padding-right: 30px;
+}
+
+.table-footer table th {
+    width: 20%;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+    padding-top: 20px;
+    position:relative;
+}
+
+.table-footer table th:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 1px;
+    border-top: 3px solid #3898b8;
+    content: ""
+}
+
+.table-footer table td {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.table-footer a.button:any-link,
+button {
+    border: 0px;
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    font-weight: 50;
+    margin: 0;
+    border-radius: 0;
+    box-sizing: 0;
+}
+
+.table-footer a.button:any-link:hover,
+button:hover {
+    border: 0px;
+    background-color: transparent;
+    text-decoration: underline;
+    color: black;
+    padding: 0;
+    font-weight: 50;
+    margin: 0;
+    border-radius: 0;
+    box-sizing: 0;
+}

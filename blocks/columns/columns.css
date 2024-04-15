@@ -1,11 +1,38 @@
 .columns > div {
   display: flex;
   flex-direction: column;
+  background-color: #003e51;
+  align-items: center;
+  text-align: center;
 }
 
 .columns img {
-  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
+
+.columns h2 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: 100;
+}
+
+/*
+.columns a.button:any-link,
+button {
+  width: 15%;
+  height: 50px;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}*/
 
 .columns > div > div {
   order: 1;
