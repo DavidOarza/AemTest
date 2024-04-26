@@ -17,7 +17,7 @@ html {
   padding: 32px;
   min-height: 300px;
   width: 96vw;
-  margin-left: calc(-50vw + 50%);
+  margin-left: calc(-50vw + 45%);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -48,6 +48,7 @@ html {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
+  line-height: 1.5;
 }
 
 .hero::after {
@@ -57,7 +58,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 35%, rgba(255, 255, 255, 1) 60%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 35%, rgba(255, 255, 255, 1) 70%);
   z-index: -1;
 }
 
@@ -70,10 +71,12 @@ html {
 }
 
 .hero a.button:any-link,
-button {
+.hero button {
   border: 2px solid #3898b8;
   color: #3898b8;
   background-color: white;
+  font-size: 18.4px;
+  font-weight: 500;
 }
 
 .hero img {
@@ -81,3 +84,24 @@ button {
   width: 100%;
   height: 100%;
 }
+
+.hero a.button::after,
+.hero button::after {
+  content: '';
+  position: relative;
+  display: inline-block;
+  margin-left: 10px; /* Adjust as needed */
+  width: 0;
+  height: 0;    
+  border-style: solid;
+  border-width: 6px 4px 6px 6px; /* Adjust arrow size and shape as needed */
+  border-color: transparent transparent transparent #3898b8; /* Set top, right, bottom, and left parts to transparent */
+  transition: transform 0.3s ease, border-color 0.3s ease; /* Add transition for smooth movement */
+}
+
+.hero a.button:hover::after,
+.hero button:hover::after {
+  transform: translateX(5px); /* Move the arrow to the right by 5px */
+  border-color: transparent transparent transparent #3898b8; /* Set color for the right part of the arrow when hovered */
+}
+                                            

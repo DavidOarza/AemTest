@@ -1,3 +1,8 @@
+.cards {
+  margin-bottom: 8%;
+  margin-top: 4%;
+}
+
 .cards > ul {
   list-style: none;
   margin-left: 15%;
@@ -12,7 +17,7 @@
 .cards > ul > li {
   border: 1px solid var(--dark-color);
   background-color: var(--background-color);
-  border-radius: 10px;
+  border-radius: 0 0 25px 25px;
 }
 
 .cards .cards-card-body {
@@ -31,4 +36,51 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.cards a:any-link {
+  color: #333333;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 0.75;
+  margin-bottom: 10%;
+}
+
+.cards a.button:any-link,
+.cards button {
+  width: fit-content;
+  border: transparent;
+  color: #3898b8;
+  background-color: transparent;
+  display:flex;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.cards a.button:any-link:hover,
+button:hover {
+  color: orange;
+}
+
+.cards p{
+  font-size: 16px;
+  line-height: 1.67;
+  color: #4D4D4F;
+}
+
+.cards > ul > li {
+  position: relative; /* Ensure relative positioning */
+}
+
+.cards > ul > li::before {
+  content: "CASE STUDY"; /* Add your text here */
+  position: absolute;
+  top: 62.8%; /* Position in the middle */
+  color: #4D4D4F;
+  background-color: #f8f8f8;
+  padding: 5px;
+  left: 5%;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 12px;
 }

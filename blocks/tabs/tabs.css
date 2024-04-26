@@ -9,11 +9,12 @@ html {
   display: flex;
   width: 98vw;
   margin-left: calc(-50vw + 52%);
+  margin-bottom: 3%;
   
 }
 
 .tabs .tabs-list {
-  margin-left: 5%;
+  margin-left: 15%;
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
@@ -59,15 +60,16 @@ html {
 
 .tabs .tabs-panel div:nth-child(2) {
   padding-left: 30px;
-  width: 30%;
+  width: 40%;
 }
 
 .tabs .tabs-panel h3{
   margin: 0;
+  font-size: 24px;
 }
 
 .tabs .tabs-panel div:first-child {
-  width: 50%;
+  width: 40%;
 }
 
 .tabs .tabs-panel[aria-hidden="true"] {
@@ -88,12 +90,12 @@ html {
 }
 
 .tabs .tabs-list button[aria-selected="false"]:hover::after {
-  background-color: orange;
+  background-color: #e36500;
   transform: translateY(-50%);
 }
 
 .tabs .tabs-list button[aria-selected="true"]::after {
-  background-color: orange;
+  background-color: #e36500;
 }
 
 .tabs .tabs-list button:hover::after {
@@ -109,7 +111,9 @@ button {
 }
 
 .tabs p{
+  font-size: 16px;
   color: #4d4d4f;
+  line-height: 1.67;
 }
 
 

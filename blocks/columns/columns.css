@@ -19,10 +19,9 @@
   font-weight: 100;
 }
 
-/*
 .columns a.button:any-link,
-button {
-  width: 15%;
+.columns button {
+  width: 8%;
   height: 50px;
   border: 2px solid white;
   color: white;
@@ -32,7 +31,8 @@ button {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-}*/
+  font-size: 18.4;
+}
 
 .columns > div > div {
   order: 1;
@@ -57,4 +57,8 @@ button {
     flex: 1;
     order: unset;
   }
+}
+
+.columns h2{
+  font-size: 36px;
 }
