@@ -51,3 +51,7 @@ body.modal-open {
   .modal dialog .section {
     padding: 0;
   }
+
+  .modal p:nth-child(3){
+    border: 2px solid black;
+  }
